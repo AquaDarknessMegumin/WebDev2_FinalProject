@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+ }
+ 
+ .dentists-page {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  font-family: poppins, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  width: 100vw; /* Set width to 100% of the viewport width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ .dentists-container {
+  display: flex;
+  flex-direction: row; /* Arrange items horizontally */
+  align-items: flex-start; /* Align items to the start of the container */
+  margin-top: 20px;
+  flex-wrap: wrap; /* Wrap items to the next line if they run out of space */
+  justify-content: space-around; /* Distribute space around items */
+ }
+ 
+ .dentist-card {
+  position: relative; /* Make the card the positioning context for the box */
+  display: flex; /* Make the card a flex container */
+  flex-direction: column; /* Arrange child elements vertically */
+  justify-content: center; /* Center child elements horizontally */
+  align-items: center; /* Center items horizontally */
+  width: 20%;
+  padding: 20px;
+  margin: 15px;
+  color: #464141;
+  text-align: justify;
+ }
+ 
+ 
+ 
+ .dentist-name,
+ .dentist-job {
+   margin-bottom: 10px;
+   text-align: center; /* Center the text */
+   display: flex; /* Use Flexbox layout model */
+   justify-content: center; /* Center the text horizontally */
+   align-items: center; /* Center the text vertically */
+   font-size: 20px;
+   line-height: 1; /* Reduce the space between lines of text */
+   color: #464141; /* Default color */
+   transition: color 0.3s; /* Smooth transition for color change */
+ }
+ 
+ .dentist-job{
+  color: #026D99;
+ }
+ 
+ .dentist-box {
+  position: absolute;
+  bottom: 0px;
+  width: 86%;
+  height: 22%;
+  border-radius:10px;
+  background-color: #f4f4f4; /* Make the box white */
+  padding: 8px;
+  background-image: linear-gradient(#1095c1 0 0);
+  background-size: 100% 0em;
+  background-position:  100%;
+  background-repeat: no-repeat;
+  transition: background-size .3s, background-position .3s .3s;
+ }
+ 
+ .dentist-card:hover .dentist-box {
+  transition: background-size .3s .3s, background-position .3s;
+  background-size: 200% 100%;
+  background-position: 100% 100%;
+ 
+ }
+
+
+ .dentist-card:hover .dentist-job {
+   transition: color 0.2s 0.2s; /* Add a delay of 0.3s */
+   color: white; /* Change color to white on hover */
+ }
+
+ .dentist-card:hover .dentist-name {
+   transition: color 0.4s 0.4s; /* Add a delay of 0.3s */
+   color: white; /* Change color to white on hover */
+ }
+
+.dentists-page img{
+  width: 2000px; /* Set the desired width */
+  height: 500px; /* Automatically adjust the height while maintaining aspect ratio */
+ 
+}
+
+ .dentists-container img {
+  width: 300px; /* Set the desired width */
+  height: auto; /* Automatically adjust the height while maintaining aspect ratio */
+  margin-top:10px;
+  border-radius: 8px;
+ }
+
+ 
+ .dentist-paragraph {
+  font-size: 20px;
+  background: -webkit-linear-gradient(#a8bec7, #98d4f0);
+  border-radius: 3px
+ }

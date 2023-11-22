@@ -1,0 +1,11 @@
+/* Footer styles */
+.footer {
+    background-color: #262c2f; /* Background color for the footer */
+    color: white; /* Text color */
+    padding: 20px; /* Padding inside the footer */
+    text-align: center; /* Center align the text */
+    position: relative; /* Fixed position at the bottom */
+    width: 100%; /* Full width */
+    bottom: 0; /* Stick to the bottom */
+  }
+  
