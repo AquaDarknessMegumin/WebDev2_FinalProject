@@ -8,6 +8,7 @@ import AboutUs from "./Pages/About_Us";
 import DentistsPage from "./Pages/Dentists";
 import ServicePage from "./Pages/OurServices";
 
+import LoginPage from "./Pages/LoginPage";
 
 import "./App.css";
 
@@ -18,7 +19,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<LoginPage />} />
           <Route path="/about" element={<AboutUs/>}/>
           <Route path="/dentists" element={<DentistsPage />} />
           <Route path="/service" element={<ServicePage />} />

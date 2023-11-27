@@ -1,17 +1,19 @@
-.Service-page {
+/* .Service-page {
   background-color: #f4f4f4;
   color: #333;
-  padding: 20px;
+  padding: 10px;
   font-family: poppins, sans-serif;
   margin: 0;
   min-height: 100vh;
-  width: 100vw; /* Set width to 100% of the viewport width */
+  width: 100vw; /* Set width to 100% of the viewport width /*
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- }
-  
+ } */
+
+
+
   .Service-Paragraph{
     font-size: 20px;
     text-align: center;
@@ -25,7 +27,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 25px;
     padding: 25px;
     border-radius: 8px;
   }
@@ -34,18 +36,16 @@
     background-size: cover;
     background-position: center;
     color: #000000;
-    padding: 1px;
     border-radius: 10px;
-    margin: 20px;
-    height: 400px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     text-align: center;
+    max-width: 300px;
     display: flex;
     flex-direction: column;     
     justify-content: center; /* Add this line */
     align-items: center; /* Add this line */
   }
-
   .Service-Card ul {
     list-style: none;
     padding: 0;
@@ -54,23 +54,68 @@
     flex-direction: row;
     align-items: center;
   }
-  
+  .Service-Card h1 {
+    font-size: 45px; /* Adjust font size for the title */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflow */
+  }
   .Service-Card ul li {
-    border: 1px solid #000;
-    padding: 50px;
-    margin: 40px;
-    height:6rem;
-    width: 10rem;
+    padding: 35px;
+    margin: 20px; /* Adjust margin for responsiveness */
+    max-width: 200px; /* Set the maximum width for responsiveness */
+    height: 9rem;
+    width: 12rem;
     text-align: center;
+    border: 2mm ridge rgba(131, 194, 194, 0.6);
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    font-size: 20px;
+    font-size: 30px;
+    position: relative;
   }
-  
-  .Service-Card ul li:hover {
-    transform: scale(1.1);
-  }
-  
 
+.title-box {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis; 
+  display: flex;
+  background-color: #f9f9f9;
+  padding: 7px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  
+  left: 50%; /* Horizontal centering */
+  transform: translateY(-50%) translateX(-50%); /* Initial position at the bottom */
+  transition: transform 0.7s ease-in, opacity 0.8s linear;
+}
+
+.Service-Card ul li:hover {
+  transform: scale(1.2);
+  background-color: #f0f0f0; /* Change the background color on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adjust the box-shadow on hover */
+}
+
+.Service-Card ul li:hover .title-box {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(100%) translateX(-50%); /* Move to the center */
+
+  }
+  @media (max-width: 768px) {
+    .Service-Card ul {
+      flex-direction: column; /* Change flex direction for smaller screens */
+      align-items: center; /* Center items for smaller screens */
+    }
+  
+    .Service-Card ul li {
+      margin: 10px; /* Adjust margin for smaller screens */
+      max-width: 80%; /* Adjust maximum width for smaller screens */
+      width: auto; /* Allow items to take full width on smaller screens */
+    }
+  }

@@ -5,7 +5,6 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <div className="header-image">
-        <img src="https://cdn.discordapp.com/attachments/1029043565868884061/1175670851329347674/image.png?ex=656c13cd&is=65599ecd&hm=4cc3951d6147ced54d5363f281acddef59f64f149089a2f294e89b90596652ef&" alt="Header Image" />
       </div>
       <div className="Homepage-container">
         <h1>About Us</h1>
@@ -38,33 +37,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="additional-feature">
-        <h2>Helping Families Achieve Healthy Smiles</h2>
-        <p>
-          At our family dental practice, we especially love seeing entire families visit us for dental care. From toddlers and school-aged kids to teens and adults, patients of all ages are welcome in our dental office.
-        </p>
-        <p>
-          One of our greatest passions is helping children adopt good oral hygiene habits so they can keep their teeth healthy and their smiles lovely.
-        </p>
-
-        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="meet-dentists-btn">
-          MEET OUR DENTISTS
-        </a>
-      </div>
-
-      <div className="bottom-feature">
-        <h2>Providing an Array of Services</h2>
-        <p>
-          You don't have to visit several dental offices to get the care you need. We offer patients many high-quality dental services in one convenient location:
-        </p>
-      </div>
-
-      <div className="appointment">
-        <h2>Book an Appointment</h2>
-        <p>
-          Contact our dental office today to schedule a convenient Saturday or same-day appointment.
-        </p>
-      </div>
+      
 
       
     </div>

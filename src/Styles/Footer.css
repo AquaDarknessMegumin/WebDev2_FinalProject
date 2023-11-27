@@ -4,8 +4,8 @@
     color: white; /* Text color */
     padding: 20px; /* Padding inside the footer */
     text-align: center; /* Center align the text */
-    position: relative; /* Fixed position at the bottom */
-    width: 100%; /* Full width */
+    position: flex; /* Fixed position at the bottom */
+    width: 100vw; /* Full width */
     bottom: 0; /* Stick to the bottom */
   }
   

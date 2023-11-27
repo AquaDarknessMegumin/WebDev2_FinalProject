@@ -1,19 +1,18 @@
 /* Reset default margin and padding for body element */
-body {
-  margin: 0;
-  padding: 0;
-}
 
 /* Shared styles */
 .navbar {
   background-color: #262c2f;
-  overflow: hidden;
-  position: relative;
+  position: flex;
   top: 0;
-  width: 100%; /* Set width to 100% of the viewport width */
+  width: 100vw; /* Set width to 100% of the viewport width */
   margin: 0;
   justify-content: center;
+  padding: 1px; /* Padding inside the footer */
+
 }
+
+
 
 .navbar-container {
   display: flex;
@@ -43,6 +42,7 @@ body {
   font-weight: bold;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
+  
 }
 
 .navbar ul li:hover {
@@ -53,7 +53,7 @@ body {
 
 /* Style for the logo */
 .navbar .navbar-container img.logo {
-  width: 15%;
+  width: 13%;
   height: auto;
 }
 
@@ -86,15 +86,6 @@ body {
   display: none;
 }
 
-/* Show menu items when the menu is open */
-.menu-items.open li {
-  display: inline;
-  margin: 25px;
-  padding: 10px 20px;
-  border-radius: 50px;
-  transition: background-color 0.3s ease;
-}
-
 @media (max-width: 768px) {
   .burger-menu {
     display: flex;
@@ -110,6 +101,36 @@ body {
   }
 }
 
-.profileicon{
-  margin-right: 7rem;
+/* Profile icon styles */
+.profileicon {
+  margin-right: 50px; /* Adjusted margin */
+  font-size: 24px; /* Increased font size */
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+  position: absolute;
+  background-color: #262c2f;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-item {
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li:hover,
+.navbar ul li.active {
+  background-color: #4e6a86;
+  transform: scale(1.1);
+  transition: background-color 0.9s ease, transform 1.5s ease;
 }
