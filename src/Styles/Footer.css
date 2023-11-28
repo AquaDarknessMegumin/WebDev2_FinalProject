@@ -2,10 +2,12 @@
 .footer {
     background-color: #262c2f; /* Background color for the footer */
     color: white; /* Text color */
-    padding: 20px; /* Padding inside the footer */
+    padding-top: 20px; /* Padding inside the footer */
+    padding-bottom: 20px; /* Padding inside the footer */
     text-align: center; /* Center align the text */
     position: flex; /* Fixed position at the bottom */
-    width: 100vw; /* Full width */
+    width: 100%; /* Full width */
     bottom: 0; /* Stick to the bottom */
+    
   }
   

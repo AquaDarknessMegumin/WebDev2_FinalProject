@@ -3,7 +3,9 @@ import '../Styles/Home_Page.css';
 
 const HomePage = () => {
   return (
+    
     <div className="home-page">
+   
       <div className="header-image">
       </div>
       <div className="Homepage-container">

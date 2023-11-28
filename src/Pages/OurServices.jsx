@@ -61,7 +61,9 @@ const ServicePage = () => {
  ];
 
  return (
+  
    <div className="dentists-page">
+
      <h1>Meet the Dentists at DentEase Dental Clinic</h1>
      <p className='dentist-paragraph'>Seamless Smiles, Effortless Appointments</p>
      <div className="dentists-container">

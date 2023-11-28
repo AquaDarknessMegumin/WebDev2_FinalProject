@@ -4,10 +4,12 @@ import '../Styles/About_Us.css';
 
 const AboutUs = () => {
   return (
+    
     <div className="home-page">
       
       <div className="content-container">
         <div className="text-column">
+
           <h1>About Us</h1>
           <p>
             Our passion at Aurora Dental is to help kids and families achieve optimal oral health. We also seek to educate patients about the importance of getting regular dental care so they can smile brighter for a lifetime. Because we think that quality dental care should be within everyone’s reach, we follow the Alberta Dental Fee Guide, charging no extra.

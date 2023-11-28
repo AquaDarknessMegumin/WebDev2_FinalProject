@@ -1,24 +1,21 @@
-/* Reset default margin and padding for body element */
-
-/* Shared styles */
+/* Navbar styles */
 .navbar {
+
   background-color: #262c2f;
-  position: flex;
+  position: relative; /* Fix the navbar position */
   top: 0;
-  width: 100vw; /* Set width to 100% of the viewport width */
-  margin: 0;
-  justify-content: center;
-  padding: 1px; /* Padding inside the footer */
-
+  left: 0;
+  right: 0;
+  z-index: 100; /* Set a high z-index to ensure it appears above other elements */
+  width: 100%; /* Set width to 100% of the viewport width */
+  padding: 10px 0; /* Add padding to the top and bottom */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
 }
-
-
 
 .navbar-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 100%;
   padding: 0 20px;
 }
 
@@ -30,10 +27,10 @@
 
 .navbar ul li {
   display: inline;
-  margin: 25px;
+  margin: 0 15px; /* Adjusted margin */
   padding: 10px 20px;
   border-radius: 50px;
- transition: background-color 0.3s ease, transform 1s ease;
+  transition: background-color 0.3s ease, transform 1s ease;
 }
 
 .navbar ul li a {
@@ -42,10 +39,16 @@
   font-weight: bold;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
-  
 }
 
 .navbar ul li:hover {
+  background-color: #4e6a86;
+  transform: scale(1.1);
+  transition: background-color 0.9s ease, transform 1.5s ease;
+}
+
+/* Style for the active page */
+.navbar ul li.active {
   background-color: #4e6a86;
   transform: scale(1.1);
   transition: background-color 0.9s ease, transform 1.5s ease;
@@ -56,7 +59,6 @@
   width: 13%;
   height: auto;
 }
-
 
 /* Burger menu styles */
 .burger-menu {
@@ -86,7 +88,11 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+.menu-items li.active {
+  background-color: #4e6a86;
+}
+
+@media (max-width: 800px) {
   .burger-menu {
     display: flex;
   }
@@ -95,29 +101,51 @@
     display: none;
   }
 
+ 
   .navbar ul.open {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Display items in a column */
+    position: absolute; /* Position absolutely within the navbar */
+    top: 100%; /* Position below the navbar */
+    left: 0;
+    width: 100%;
+    background-color: #262c2f; /* Match the navbar background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }
 
 /* Profile icon styles */
 .profileicon {
-  margin-right: 50px; /* Adjusted margin */
-  font-size: 24px; /* Increased font size */
+  margin-right: 20px;
+  font-size: 24px;
   color: #fff;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  position: relative;
 }
 
 /* Dropdown styles */
 .dropdown-menu {
   position: absolute;
-  background-color: #262c2f;
+  background-color: #1c89c0;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  right:8rem;
+  z-index: 1000;
+ padding:11px;
+ 
+}
+
+.notifications-dropdown {
+  position: absolute;
+  background-color: #357ca0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  right:8rem;
+  z-index: 1000;
+  padding:11px;
+
 }
 
 .dropdown-item {
@@ -134,3 +162,4 @@
   transform: scale(1.1);
   transition: background-color 0.9s ease, transform 1.5s ease;
 }
+

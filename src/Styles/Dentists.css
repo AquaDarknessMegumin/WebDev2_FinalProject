@@ -1,40 +1,43 @@
 
  
-  .dentists-page {
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
-    font-family: poppins, sans-serif;
-    margin: 0;
-    min-height: 100vh;
-    width: 100vw; /* Set width to 100% of the viewport width */
+.dentists-page {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  font-family: poppins, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  width: 100vw; /* Set width to 100% of the viewport width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+   
+  
+  .dentists-container {
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    align-items: flex-start; /* Align items to the start of the container */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Wrap items to the next line if they run out of space */
+    justify-content: space-around; /* Distribute space around items */
+  }
+  
+  .dentist-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   }
- 
- .dentists-container {
-  display: flex;
-  flex-direction: row; /* Arrange items horizontally */
-  align-items: flex-start; /* Align items to the start of the container */
-  margin-top: 20px;
-  flex-wrap: wrap; /* Wrap items to the next line if they run out of space */
-  justify-content: space-around; /* Distribute space around items */
- }
- 
- .dentist-card {
-  position: relative; /* Make the card the positioning context for the box */
-  display: flex; /* Make the card a flex container */
-  flex-direction: column; /* Arrange child elements vertically */
-  justify-content: center; /* Center child elements horizontally */
-  align-items: center; /* Center items horizontally */
-  width: 20%;
-  padding: 20px;
-  margin: 15px;
-  color: #464141;
-  text-align: justify;
- }
+    width: 20%;
+    padding: 20px;
+    margin: 15px;
+    color: #464141;
+    text-align: justify;
+  }
+  
  
  
  
@@ -59,7 +62,7 @@
   position: absolute;
   bottom: 0px;
   width: 86%;
-  height: 22%;
+  height: 25%;
   border-radius:10px;
   background-color: #f4f4f4; /* Make the box white */
   padding: 8px;
@@ -77,6 +80,7 @@
  
  }
 
+ 
 
  .dentist-card:hover .dentist-job {
    transition: color 0.2s 0.2s; /* Add a delay of 0.3s */
@@ -108,3 +112,23 @@
   background: -webkit-linear-gradient(#a8bec7, #98d4f0);
   border-radius: 3px
  }
+
+
+
+ 
+ 
+@media only screen and (max-width: 768px) {
+  /* Add responsive styles for smaller screens */
+  .dentist-card {
+    width:100%; /* Full width for smaller screens */
+  }
+
+  .dentist-box {
+    width: 100%; /* Full width for smaller screens */
+    height: auto; /* Auto height */
+  }
+
+  .dentists-container img {
+    width: 100%; /* Full width for smaller screens */
+  }
+}

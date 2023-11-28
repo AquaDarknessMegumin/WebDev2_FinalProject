@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import '../Styles/Login_Page.css';
 
+const PrivateRoute = ({ element }) => {
+    const { isLoggedIn } = useAuth();
+  
+    return isLoggedIn ? element : <Navigate to="/" />;
+  };
 const Logo = () => (
   <img src="pictures/DentEaseNav.png" alt="Logo" style={{ width: '100px', height: 'auto' }} />
 );
