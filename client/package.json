@@ -16,7 +16,8 @@
     "mysql2": "^3.6.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.16.0"
+    "react-router-dom": "^6.16.0",
+    "router-dom": "^2.2.11"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

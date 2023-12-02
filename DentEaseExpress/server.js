@@ -1,14 +1,21 @@
 const express = require("express");
 const path = require("path");
+const session = require('express-session');
+const cors = require("cors");
+const mysql = require('mysql2');
 
 const app = express();
 const port = 3000;
 
-const cors = require("cors");
-const mysql = require('mysql2');
-
 app.use(cors());
 app.use(express.json());
+
+// Use express-session for session management
+app.use(session({
+  secret: 'your-secret-key',
+  resave: false,
+  saveUninitialized: true
+}));
 
 const db = mysql.createConnection({
   host: "localhost",
@@ -25,6 +32,19 @@ db.connect((err) => {
   }
 });
 
+// Logout route
+app.get('/logout', (req, res) => {
+  // Destroy the session
+  req.session.destroy((err) => {
+    if (err) {
+      console.error('Error destroying session:', err);
+      res.status(500).send('Error logging out');
+    } else {
+      // Redirect to the home page after successful logout
+      res.redirect('/');
+    }
+  });
+});
 // Login route
 app.post("/login", (req, res) => {
   console.log("Received login request:", req.body);
