@@ -1,0 +1,68 @@
+
+
+ 
+.contact-container {
+  background-color: #f4f4f4;
+  color: #333;
+  /* padding: 20px; ayaw ni hilabta */ 
+  font-family: poppins, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  width: 100vw; /* Set width to 100% of the viewport width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+   
+  
+
+
+.contact-heading {
+    justify-content: center; 
+    text-align: center; 
+    margin-bottom: 5px;
+  }
+  
+  .contact-heading h2 {
+    margin-bottom: 1px; 
+    color:#232f33;
+  }
+  
+   .contact-info {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top:50px;
+      margin-left: 10%;
+    }
+    
+    .office-hours {
+      width:60%;
+      color:#232f33;
+    }
+    
+    .office-hours-table {
+      width: 70%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    
+    .office-hours-table th {
+      background-color: #232f33;
+      color: #fff;
+      padding: 16px;
+      text-align: center;
+      border: 2px solid #000000;
+    }
+    
+    .office-hours-table td {
+      padding: 15px;
+      border: 2px solid #000000;
+    }
+    
+    .find-us {
+      width: 100%;
+      margin-right: 10%;
+      color: #232f33;
+    }

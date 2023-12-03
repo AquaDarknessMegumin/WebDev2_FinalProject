@@ -41,7 +41,7 @@ const NavBar = () => {
           <li className={activePage === '/' ? 'active' : ''}><Link to="/home">Home</Link></li>
           <li className={activePage === '/about' ? 'active' : ''}><Link to="/about">About</Link></li>
           <li className={activePage === '/service' ? 'active' : ''}><Link to="/service">Services</Link></li>
-          <li><a href="#">Contact</a></li>
+          <li className={activePage === '/contact' ? 'active' : ''}><Link to="/contact">Contact</Link></li>
           <li><a href="#">Make an Appointment</a></li>
         </ul>
 

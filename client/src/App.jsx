@@ -9,6 +9,7 @@ import DentistsPage from "./Pages/Dentists";
 import ServicePage from "./Pages/OurServices";
 import LoginPage from "./Pages/LoginPage";
 import ProfilePage from "./Pages/CustomerProfile";
+import ContactPage from "./Pages/Contact";
 
 import "./App.css";
 
@@ -30,6 +31,7 @@ function App() {
               <Route path="/about" element={<AboutUs />} />
               <Route path="/dentists" element={<DentistsPage />} />
               <Route path="/service" element={<ServicePage />} />
+              <Route path="/contact" element={<ContactPage />} />
               <Route path="/profile" element={<ProfilePage />} />
             </>
           ) : (

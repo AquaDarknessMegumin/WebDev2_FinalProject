@@ -45,6 +45,8 @@ app.get('/logout', (req, res) => {
     }
   });
 });
+
+
 // Login route
 app.post("/login", (req, res) => {
   console.log("Received login request:", req.body);
@@ -99,6 +101,29 @@ app.post("/register", (req, res) => {
     }
   });
 });
+
+
+///
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

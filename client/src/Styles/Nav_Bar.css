@@ -131,7 +131,7 @@
   background-color: #1c89c0;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  right:8rem;
+  right:6%;
   z-index: 1000;
  padding:11px;
  
@@ -142,7 +142,7 @@
   background-color: #357ca0;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  right:8rem;
+  right:6rem;
   z-index: 1000;
   padding:11px;
 
