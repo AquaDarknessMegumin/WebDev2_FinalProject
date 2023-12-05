@@ -1,0 +1,57 @@
+.admin-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .edit-button {
+    margin: 10px;
+  }
+  
+  .admin-profile {
+    text-align: center;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    background-color: rgba(40, 108, 131, 0.2); 
+    border-radius: 10px; 
+    padding: 25px;
+    margin-left: 30px;
+  }
+  
+  .admin-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #232f33;
+  }
+  
+  .appointment-table {
+    width: 70%;
+    margin-right: 30px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 2px solid #000000;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #232f33;
+    color: white;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  th:hover {
+    background-color: #232f33;
+  }
+  
